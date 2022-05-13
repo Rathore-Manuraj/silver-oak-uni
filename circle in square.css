@@ -1,0 +1,17 @@
+*{
+    margin-top: 0%;
+    margin-left: 0%;
+}
+.square{
+    height: 500px;
+    width: 500px;
+    background-color: yellow;
+    
+}
+.circle{
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    background-color: black;
+    margin-top: -450px;
+}

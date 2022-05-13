@@ -1,0 +1,22 @@
+*{
+    margin-top: 0%;
+    margin-left: 0%;
+}
+body, html{
+    height: 100%;
+}
+.parellex{
+    background-image: url(Ferrari.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+   
+    height: 100%;
+}
+.div-1{
+    height: 200px;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+}
