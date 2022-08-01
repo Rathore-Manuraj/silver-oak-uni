@@ -5,16 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body>
-    <h1>The Document Object</h1>
-    <h2>The getElementByClassName() Method</h2>
-    <p>Change the text of the first element with class="example:"</p>
-    <div class="example">Element1</div>
-    <div class="example">Element2</div>
+    <h3>hello guys</h3>
+    <input type="text" value="" id="my text">
+    <input type="button" value="firstclick" onclick="getfocus()">
+    <input type="button" value="lostclick" onclick="losefocus()">
     <script>
-        const collecton = document.getElementsByClassName("example");
-        collection[1].innerHTML ="Hello World"
+        function getfocus()
+        {
+            document.getElementById("my text").focus();
+            document.getElementById("my text").style.backgroundColor="lightgrey";
+        }
+        function losefocus()
+        {
+            document.getElementById("my text").blur();
+            document.getElementById("my text").style.backgroundColor="white" ;
+        }
+
+
     </script>
 </body>
 </html>
