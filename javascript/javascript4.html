@@ -1,0 +1,93 @@
+<script>
+    //hide all divs on the page
+
+    jQuery('div').hide();
+
+    //update the text contained inside of all divs
+
+    jQuery('div').text('This is content for the DIV element');
+
+    //add class attribute with value of updatedContent to all divs
+
+    jQuery('div').addClass("updatedContent");
+
+    //show all divs on the page
+
+    jQuery('div').show();
+</script>
+
+Jquery Cookbook, 2010
+
+<!doctype html>
+
+<html>
+
+<head>
+
+    <script src="http://code.jquery.com/jquery1.9.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div>This is existing content</div>
+
+    <script>
+        //hide all divs on the page
+
+        jQuery('div').hide();
+
+        //update the text contained inside of all divs
+
+        jQuery('div').text('This is content for the DIV element');
+
+        //add a class attribute of updatedContent to all divs
+
+        jQuery('div').addClass("updatedContent");
+
+        //show all divs on the page
+
+        jQuery('div').show();
+    </script>
+
+</body>
+
+</html>
+
+Jquery linked library and script at end of document
+
+<!doctype html>
+
+<html>
+
+<head>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div>This is old content</div>
+
+    <script>
+        //hide all divs on the page
+
+        jQuery('div').hide();
+
+        //update the text contained inside of all divs
+
+        jQuery('div').text('This is new content');
+
+        //add a class attribute updatedContent to all divs
+
+        jQuery('div').addClass("updatedContent");
+
+        //show all divs on the page
+
+        jQuery('div').show();
+    </script>
+
+</body>
+
+</html>
