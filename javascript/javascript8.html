@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        #d1 {
+            /* background-color: aquamarine; */
+            background-image: url(https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg);
+            height: 600px;
+            width: 1300px;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#hide").click(function() {
+                $("div").hide(2000);
+                $("#hide").attr("disabled", true);
+                $("#show").attr("disabled", false);
+
+
+            });
+            $("#show").click(function() {
+                $("div").show(2000);
+                $("#hide").attr("disabled", false);
+                $("#show").attr("disable", true);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="d1">
+
+    </div>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+</body>
+
+</html>
