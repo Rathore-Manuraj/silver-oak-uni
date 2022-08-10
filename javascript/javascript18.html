@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#name").blur(function() {
+                alert("FirstNmae is required...!");
+            });
+        });
+    </script>
+</head>
+
+<body background="img.jpg">
+    <center>
+        <marquee behavior="" direction="">
+            <h2>Form Fill up</h2>
+        </marquee>
+        <hr>
+        <div>
+            <label for="name" style="color: white">FirstName:</label>
+            <input type="text" id="Txtname" autofocus placeholder="FirstName" maxlength="20" /></div><br>
+        <small id="TxtNameValidation"></small>
+
+        <div> <label for="lname" style="color: white">LastName:</label>
+            <input type="text" id="TxtContactNo" placeholder="LastName" maxlength="10" /></div><br>
+        <small id="TxtContactNoValidation"></small>
+
+        <div> <label for="E-mail" style="color: white">E-mail:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" id="E-mail" placeholder="E-mail"></div><br>
+
+
+        <div> <label for="Contact" style="color: white">Contact no:</label>
+            <input type="number" id="Contact" maxlength="10" placeholder="Contact no" required></div><br>
+
+
+        <div>
+            <input type="button" id="submit" value="submit" placeholder="submit" required></div><br>
+
+    </center>
+</body>
+
+</html>
