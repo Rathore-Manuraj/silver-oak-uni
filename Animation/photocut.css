@@ -1,0 +1,78 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222;
+}
+
+.box{
+    position: relative;
+    height: 300px;
+    width: 400px;
+    background: #fff;
+}
+
+.box span {
+    position: absolute;
+    inset: 0;
+    transition: 0.5s;
+    background: url("https://media.istockphoto.com/photos/canadian-rockies-banff-national-park-dramatic-landscape-picture-id1342152935?b=1&k=20&m=1342152935&s=170667a&w=0&h=q9-vhO5MC7zwaxX8_zFUiqMnQJ5udMjEBf0npeCCAGs=");
+    background-size: cover;
+}
+
+.box span:nth-child(1){
+    clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
+    /* background: red; */
+    transition-delay: 0S;
+}
+
+.box span:nth-child(2){
+    clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
+    /* background: green; */
+    transition-delay: 0.25S;
+
+}
+
+.box span:nth-child(3){
+    clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
+    /* background: blue; */
+    transition-delay: 0.5S;
+
+}
+
+.box span:nth-child(4){
+    clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+    /* background: #222; */
+    transition-delay: 0.75S;
+
+}
+
+/* .box span:nth-child(3){
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 99%);
+    background: aqua;
+} */
+
+/* hover effect */
+
+.box:hover span:nth-child(1){
+    transform: translate(-40px,-60px)rotate(-15deg);
+}
+
+.box:hover span:nth-child(2){
+    transform: translate(40px,-100px)rotate(25deg);
+}
+
+.box:hover span:nth-child(3){
+    transform: translate(-40px,80px)rotate(15deg);
+}
+
+.box:hover span:nth-child(4){
+    transform: translate(40px,60px)rotate(-15deg);
+}
